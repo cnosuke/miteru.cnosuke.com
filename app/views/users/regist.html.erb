@@ -1,0 +1,24 @@
+<%= stylesheet_link_tag    "regist", :media => "all" %>
+<%= javascript_include_tag "regist" %>
+
+<%
+
+bm = "javascript:void(window.open('http://#{request.host_with_port}/post?t='+encodeURIComponent(document.title)+'&u='+encodeURIComponent(location.href)+'&i=#{@user.user_key}',null,'width=560,height=200'))"
+
+%>
+
+<div id="container">
+
+<div id="contents">
+  <h1>miteru.cnosuke.com</h1>
+  <p id="subscription">見ているページをすぐにツイートするブックマークレットだよ。</p>
+
+  <h2>ぶっくまーくれっと</h2>
+  <p>このブックマークレットを、ツールバーとかに登録して使ってください。</p>
+  <p>下のボタンをドラッグアンドドロップ！</p>
+  <%= link_to '#miteru', bm, { :id => 'bookmarklet', :class => 'notLink' } %>
+
+  <p id="copyrights">&copy; 2012 miteru.cnosuke.com</p>
+
+</div>
+</div>

@@ -1,0 +1,13 @@
+<%= stylesheet_link_tag    "post", :media => "all" %>
+<%= javascript_include_tag "post" %>
+
+<div id="container">
+<% default_text = " - #{@title} #{@url} #miteru" %>
+<%= form_tag '/tweet' , :method=>:post , :remote=>true  do %>
+        <%= text_area_tag :status , default_text, :maxlength => 140, :size=>"60x3"  %>
+        <%= hidden_field_tag :key, @key %>
+        <%= submit_tag "ツイートする", :id => 'tweet_bt' %>
+<% end %>
+
+<a id="tweet_link" href="#" style="display: none" target="_blank">ツイートの詳細を開く...</a>
+</div>

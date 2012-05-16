@@ -1,0 +1,74 @@
+#container {
+    margin: 0 0;
+    padding: 0 0;
+    background-color : #eeeeee;
+    background : -moz-linear-gradient(top, #fff, #eee);
+    background : -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+}
+
+#contents {
+    margin: 20px 100px;
+}
+
+h1 {
+    margin: 20px 10px 0 0;
+    font-size: 25px;
+    padding: 20px 0;
+    width: 12em;
+    text-align : center;
+    color : #fff;
+    background-color: #cccccc;
+    border-right-color : #999999;
+    border-bottom-color : #999999;
+    text-shadow : #999 0 2px 2px;
+    border-radius : 10px;
+}
+
+h2 {
+    width: 12em;
+    margin: 50px 10px 0 0;
+    padding: 0 0 5px 5px;
+}
+
+p {
+    margin: 0 0 0 50px;
+    padding: 10px 0;
+}
+
+p#subscription{
+    margin: 10px 0 0 5px;
+    color: #4c4c4c;
+}
+
+p#copyrights{
+    text-align: center;
+    padding: 100px;
+    color: #999;
+    
+}
+
+
+a#bookmarklet {
+    font-weight: bold;
+    margin: 10px 0 0 50px;
+    padding : 10px 0;
+    display : block;
+    width : 200px;
+    font-size : 20px;
+    text-align : center;
+    color : #333333;
+    background-color : #eeeeee;
+    border : 1px solid #ccc;
+    border-right-color : #999999;
+    border-bottom-color : #999999;
+    text-shadow : #f9f9f9 0 1px 1px;
+    background : -moz-linear-gradient(top, #fff, #ccc);
+    background : -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+    text-decoration : none;
+    border-radius : 3px;
+    -webkit-transition : box-shadow 200ms ease-in;
+}
+
+a#bookmarklet:hover {
+    box-shadow : blue 0 0 8px;
+}

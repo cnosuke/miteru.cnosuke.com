@@ -1,3 +1,14 @@
+# Ignore bundler config
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+##### Rails #####
 *.rbc
 *.sassc
 .sass-cache
@@ -14,3 +25,19 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
+
+
+##### Ruby #####
+*.gem
+*.rbc
+.bundle
+.config
+coverage
+InstalledFiles
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp

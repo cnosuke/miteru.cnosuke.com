@@ -1,0 +1,16 @@
+<% unless @error %>
+$('#tweet_link').attr('href', '<%= @tweet_url %>');
+$('#tweet_link').show(1000);
+setTimeout('window.close();', 5000);
+times = 5
+var closetimer = function(i){
+    $('#tweet_bt').attr('value', '送信完了('+i+'秒後に閉じます)');
+}
+setTimeout('closetimer(4);',1000);
+setTimeout('closetimer(3);',2000);
+setTimeout('closetimer(2);',3000);
+setTimeout('closetimer(1);',4000);
+setTimeout('closetimer(0);',5000);
+<% else %>
+
+<% end %>
