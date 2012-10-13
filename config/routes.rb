@@ -1,11 +1,16 @@
 Miteru::Application.routes.draw do
 
-  match 'oauth' => 'Users#oauth'
-  match 'oauth_callback' => 'Users#oauth_callback'
-  get 'regist' => 'Users#regist'
-  get 'post' => 'Users#post'
-  post 'tweet' => 'Users#tweet'
-  root :to => 'Users#index'
+  #before_filter化したのでここのルーティング変えないといけないかも
+  match 'oauth' => 'users#oauth'
+
+  match 'oauth_callback' => 'users#oauth_callback'
+  get 'regist' => 'users#regist'
+
+  #restfulを意識するなら get 'tweet' => 'usres#post'で、post 'tweet' => 'users#tweet'と、
+  #url自体ではなく、リクエストで分けるべきでは。
+  get 'post' => 'users#post'
+  post 'tweet' => 'users#tweet'
+  root :to => 'users#index'
 
   #get "users/regist"
 
